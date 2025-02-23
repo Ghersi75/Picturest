@@ -1,0 +1,16 @@
+name: Backend Test
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "backend/**"
+
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo
+        run: echo backend test
