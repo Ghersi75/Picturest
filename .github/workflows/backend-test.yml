@@ -15,4 +15,4 @@ jobs:
       - name: Echo
         run: echo backend test
       - name: Change folder and check
-        run: pwd && cd backend/ && pwd
+        run: ls && cd backend/ && pwd
