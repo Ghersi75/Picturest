@@ -12,6 +12,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - name: Actually checkout code before doing anything
+        uses: actions/checkout@v4
       - name: Echo
         run: echo backend test
       - name: Change folder and check
